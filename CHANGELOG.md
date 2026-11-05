@@ -21,12 +21,12 @@ All notable changes to AIMS-mini are documented here.
 ### Fixed
 - Make `search_by_title()` case-insensitive.
 
-## [1.0.0] - 2026-11-05
+## [1.0.0]
 
 ### Added
-- AIMS-mini package with DVD and cart models.
-- Cart display, discount calculation and title search.
-- Unit tests and command-line demonstration.
+- AIMS-mini application
+- DVD cart management
+- DVD search functionality
 
 ## [0.3.0]
 

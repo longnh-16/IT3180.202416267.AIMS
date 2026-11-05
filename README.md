@@ -60,4 +60,4 @@ it3180-<MSSV>-aims/
 ZIP chứa snapshot mã nguồn/tài liệu đã hoàn thiện và kiểm thử. GitHub Issue, lịch sử nhánh, PR, review/approval, branch protection, tag và GitHub Release là trạng thái trên repository từ xa; bạn cần tạo chúng theo `docs/WINDOWS_GITHUB_GUIDE.md`. Không nên nộp ZIP như thể các PR/Issue đã được tạo.
 
 ## Câu hỏi thảo luận
-Câu trả lời đã được soạn trong `docs/answers-lab01.md` đến `docs/answers-lab05.md`. Khi làm từng Lab, đưa file tương ứng vào PR của Lab đó theo hướng dẫn.
+Câu trả lời đã được soạn trong `docs/answers-lab01.md` đến `docs/answers-lab05.md`
