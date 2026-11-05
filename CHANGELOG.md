@@ -19,7 +19,7 @@ All notable changes to AIMS-mini are documented here.
 ## [1.0.1] - 2026-11-05
 
 ### Fixed
-- Make `search_by_title()` case-insensitive.
+- Make search_by_title() case-insensitive.
 
 ## [1.0.0] - 2026-11-05
 
