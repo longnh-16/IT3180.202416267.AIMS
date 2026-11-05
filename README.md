@@ -1,6 +1,6 @@
 # IT3180 – AIMS-mini (bộ bài thực hành Git & GitHub)
 
-Bộ dự án này chuẩn bị các tệp mã nguồn và tài liệu cần thiết cho chuỗi Lab 01–05 trong tài liệu **IT3180_0504_C5.4-Thuc-hanh-Git-GitHub.pdf**.
+## Phần trả lời các câu hỏi của các bài thực hành ở trong thư mục docs
 
 ## Yêu cầu
 - Windows 10/11
