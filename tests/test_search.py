@@ -22,6 +22,12 @@ class TestSearchAndSort(unittest.TestCase):
         self.assertEqual([d.title for d in search_by_category(self.items, "animation")],
                          ["The Lion King", "Aladdin"])
 
+    def test_search_category_case_insensitive(self):
+        self.assertEqual(
+            [d.title for d in search_by_category(self.items, "animation")],
+            ["The Lion King", "Aladdin"]
+    )
+
     def test_sort_by_title_and_cost(self):
         self.assertEqual([d.title for d in sort_by_title(self.items)],
                          ["Aladdin", "Star Wars", "The Lion King"])
