@@ -111,7 +111,6 @@ class Cart:
         """
         if not self.items:
             output = "The cart is empty"
-
         else:
             lines = [
                 "*********************** CART ***********************"
