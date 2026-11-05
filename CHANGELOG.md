@@ -10,8 +10,8 @@ All notable changes to AIMS-mini are documented here.
 ## [1.1.0] - 2026-11-05
 
 ### Added
-- Category search and sorting by title/cost.
-- Pull request template and GitHub Actions test workflow.
+- Add search by category.
+- Add sorting features for cart.
 
 ### Fixed
 - Case-insensitive title search, including the `lion` / `The Lion King` case.
