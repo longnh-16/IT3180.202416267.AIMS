@@ -14,11 +14,9 @@ class TestSearchAndSort(unittest.TestCase):
         ]
 
     def test_search_title_case_insensitive(self):
-        result = search_by_title(self.items, "lion")
-        self.assertEqual(
-            [dvd.title for dvd in result],
-            ["The Lion King"]
-    )
+        self.assertEqual([d.title for d in search_by_title(self.items, "lion")],
+                         ["The Lion King"])
+        self.assertEqual(len(search_by_title(self.items, "LION")), 1)
 
     def test_search_category_case_insensitive(self):
         self.assertEqual([d.title for d in search_by_category(self.items, "animation")],
