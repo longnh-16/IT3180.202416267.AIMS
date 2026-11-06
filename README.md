@@ -16,13 +16,6 @@ python main.py
 python -m unittest discover -s tests -v
 ```
 
-Nếu Windows không nhận lệnh `python`, thử:
-
-```powershell
-py main.py
-py -m unittest discover -s tests -v
-```
-
 Kết quả chính cần thấy:
 
 ```text
@@ -33,7 +26,7 @@ Search 'lion': The Lion King
 
 ## Cấu trúc
 ```text
-it3180-<MSSV>-aims/
+it3180-202416267-aims/
 ├── .github/
 │   ├── pull_request_template.md
 │   └── workflows/ci.yml
@@ -55,9 +48,6 @@ it3180-<MSSV>-aims/
 ├── CHANGELOG.md
 └── main.py
 ```
-
-## Lưu ý quan trọng về bài thực hành
-ZIP chứa snapshot mã nguồn/tài liệu đã hoàn thiện và kiểm thử. GitHub Issue, lịch sử nhánh, PR, review/approval, branch protection, tag và GitHub Release là trạng thái trên repository từ xa; bạn cần tạo chúng theo `docs/WINDOWS_GITHUB_GUIDE.md`. Không nên nộp ZIP như thể các PR/Issue đã được tạo.
 
 ## Câu hỏi thảo luận
 Câu trả lời đã được soạn trong `docs/answers-lab01.md` đến `docs/answers-lab05.md`
