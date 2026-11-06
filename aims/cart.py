@@ -10,15 +10,23 @@ class Cart:
         self.items = []
 
     def add_dvd(self, dvd: DigitalVideoDisc) -> bool:
-        """Add a DVD. Return False when the cart already contains 20 DVDs."""
+        """Add a DVD unless the cart already contains 20 DVDs.
+
+        Returns:
+            True if the DVD was added, otherwise False when the cart is full.
+        """
         if not isinstance(dvd, DigitalVideoDisc):
             raise TypeError("dvd must be a DigitalVideoDisc")
+
+        # Reject the 21st DVD: the cart may contain at most 20 DVDs.
         if len(self.items) >= MAX_NUMBERS_ORDERED:
             return False
+
         self.items.append(dvd)
         return True
 
     def remove_dvd(self, dvd: DigitalVideoDisc) -> bool:
+        """Remove a DVD. Return False if it is not in the cart."""
         try:
             self.items.remove(dvd)
             return True
@@ -26,12 +34,13 @@ class Cart:
             return False
 
     def total_cost(self) -> float:
-        return float(sum((dvd.cost for dvd in self.items), start=0))
+        return float(sum(dvd.cost for dvd in self.items))
 
     def total_cost_with_discount(self, percent: float) -> float:
         if not isinstance(percent, (int, float)) or not 0 <= percent <= 100:
             raise ValueError("percent must be between 0 and 100")
-        total = sum((dvd.cost for dvd in self.items), start=0)
+
+        total = sum(dvd.cost for dvd in self.items)
         return float(total * (100 - percent) / 100)
 
     def sort_by_title(self):
@@ -47,11 +56,14 @@ class Cart:
             output = "The cart is empty"
         else:
             lines = ["***********************CART***********************"]
-            lines.extend(f"{index}. {dvd.title} - {dvd.cost:.2f} $"
-                         for index, dvd in enumerate(self.items, start=1))
+            lines.extend(
+                f"{index}. {dvd.title} - {dvd.cost:.2f} $"
+                for index, dvd in enumerate(self.items, start=1)
+            )
             lines.append(f"Total cost: {self.total_cost():.2f} $")
             lines.append("***************************************************")
             output = "\n".join(lines)
+
         print(output)
         return output
 
